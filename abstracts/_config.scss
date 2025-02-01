@@ -1,0 +1,19 @@
+@use "sass:map";
+
+$fs-html: 16px;
+
+$font-nunito: "Nunito Sans", serif;
+
+$breakpoints: (
+  xl: 1200px,
+  lg: 992px,
+  md: 768px,
+  sm: 576px,
+);
+
+$transition-time: 0.24s;
+$transition-type: ease-out;
+
+$container-width: map.get($breakpoints, "xl");
+$container-indent: 16px;
+$container-space: $container-width + ($container-indent * 2);
